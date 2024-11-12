@@ -1,0 +1,29 @@
+#under{
+    width: 98vw;
+    height: 10vh;
+    margin: 1vh 1vw 0 0;
+}
+#menuHolder{
+    width: 98vw;
+    height: 10vh;
+    position: fixed;
+    background: antiquewhite;
+    top: 0;
+    left: 0;
+}
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#menu>li{
+    list-style-type: none;
+}
+#menu>li>a{
+    text-decoration: none;
+    color: black;
+}
+#menu>li>a:hover{
+    border-bottom: 3px solid black;
+    color: blue;
+}
