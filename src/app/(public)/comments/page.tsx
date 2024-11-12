@@ -7,7 +7,7 @@ const CommentsPage = async () => {
     const comments:IComment[] = await placeHolderService.comments.getAllComments()
     return (
         <div>
-            {comments.map((comment:IComment) =><div><Link href={'/comments/'+comment.id}>{comment.name}</Link></div>)}
+            {comments.map((comment:IComment) =><div key={comment.id}><Link href={'/comments/'+comment.id}>{comment.name}</Link></div>)}
         </div>
     );
 };

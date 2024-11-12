@@ -7,7 +7,7 @@ const UsersPage = async () => {
     const users: IUser[] = await placeHolderService.users.getAllUsers()
     return (
         <div>
-            {users.map((user) => <div><Link href={'/users/' + user.id}>{user.username}</Link></div>)}
+            {users.map((user) => <div key={user.id}><Link href={'/users/' + user.id}>{user.username}</Link></div>)}
 
         </div>
     );
